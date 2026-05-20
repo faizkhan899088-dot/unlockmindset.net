@@ -1,123 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GrowthVia Digital</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Mindset Landing Page</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0b0b0b;
+    color:white;
+    overflow-x:hidden;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:40px 20px;
+    background:
+    linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.85)),
+    url('https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1400&auto=format&fit=crop') center/cover no-repeat;
+}
+
+.container{
+    max-width:700px;
+    text-align:center;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 18px;
+    border:1px solid rgba(255,255,255,0.15);
+    background:rgba(255,255,255,0.06);
+    border-radius:50px;
+    font-size:14px;
+    color:#d7d7d7;
+    margin-bottom:25px;
+    backdrop-filter:blur(5px);
+}
+
+h1{
+    font-size:52px;
+    line-height:1.2;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.highlight{
+    color:#ffd369;
+}
+
+.description{
+    font-size:18px;
+    line-height:1.8;
+    color:#d0d0d0;
+    margin-bottom:40px;
+}
+
+.quiz-box{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:22px;
+    margin-bottom:40px;
+    text-align:left;
+    backdrop-filter:blur(6px);
+}
+
+.quiz-title{
+    font-size:22px;
+    margin-bottom:20px;
+    font-weight:600;
+    text-align:center;
+}
+
+.question{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:18px;
+    font-size:17px;
+    color:#f0f0f0;
+}
+
+.circle{
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    border:2px solid #ffd369;
+    flex-shrink:0;
+}
+
+.cta-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#ffd369;
+    color:#111;
+    padding:18px 38px;
+    border-radius:60px;
+    font-size:18px;
+    font-weight:600;
+    transition:0.3s ease;
+    box-shadow:0 10px 30px rgba(255,211,105,0.25);
+}
+
+.cta-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 14px 35px rgba(255,211,105,0.35);
+}
+
+.note{
+    margin-top:18px;
+    font-size:13px;
+    color:#a0a0a0;
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:36px;
+    }
+
+    .description{
+        font-size:16px;
+    }
+
+    .quiz-box{
+        padding:24px;
+    }
+
+    .question{
+        font-size:15px;
+    }
+
+    .cta-btn{
+        width:100%;
+        padding:16px;
+    }
+}
+
+</style>
 </head>
-<body class="bg-gray-100 font-sans">
-  <!-- Navbar -->
-  <nav class="bg-blue-600 text-white p-4 fixed w-full top-0 z-10">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">GrowthVia Digital</h1>
-      <ul class="flex space-x-6">
-        <li><a href="#home" class="hover:underline">Home</a></li>
-        <li><a href="#services" class="hover:underline">Services</a></li>
-        <li><a href="#about" class="hover:underline">About</a></li>
-        <li><a href="#contact" class="hover:underline">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+<body>
 
-  <!-- Hero Section -->
-  <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
-    <div class="container mx-auto text-center">
-      <h2 class="text-4xl md:text-6xl font-bold mb-4">Welcome to GrowthVia Digital</h2>
-      <p class="text-lg md:text-xl mb-6">Your partner in digital growth and innovation.</p>
-      <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">Get Started</a>
-    </div>
-  </section>
+<section class="hero">
 
-  <!-- Services Section -->
-  <section id="services" class="py-16 bg-white">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-8">Our Services</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
-        <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
-          <h3 class="text-xl font-semibold mb-4">Digital Marketing</h3>
-          <p>Boost your brand with our expert SEO, PPC, and social media strategies.</p>
+    <div class="container">
+
+        <div class="badge">
+            Mindset • Focus • Growth
         </div>
-        <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
-          <h3 class="text-xl font-semibold mb-4">Web Development</h3>
-          <p>Create stunning, responsive websites tailored to your business needs.</p>
-        </div>
-        <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
-          <h3 class="text-xl font-semibold mb-4">Content Creation</h3>
-          <p>Engage your audience with compelling content and visuals.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-16 bg-gray-200">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-8">About Us</h2>
-      <p class="text-lg max-w-2xl mx-auto">GrowthVia Digital is dedicated to helping businesses thrive in the digital world. With innovative solutions and a passionate team, we drive results that matter.</p>
-    </div>
-  </section>
+        <h1>
+            Discover Why Most People 
+            <span class="highlight">
+                Struggle To Manifest Success
+            </span>
+        </h1>
 
- <!-- Contact Section -->
-<section id="contact" class="py-16 bg-white">
-  <div class="container mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
-    <div class="max-w-lg mx-auto">
-      <form id="contactForm">
-        <input type="text" id="name" name="name" placeholder="Your Name"
-          class="w-full p-3 mb-4 border rounded-lg" required>
-        
-        <input type="email" id="email" name="email" placeholder="Your Email"
-          class="w-full p-3 mb-4 border rounded-lg" required>
-        
-        <textarea id="message" name="message" placeholder="Your Message"
-          class="w-full p-3 mb-4 border rounded-lg" rows="5" required></textarea>
-        
-        <button type="submit" id="submit"
-          class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700">
-          Send Message
-        </button>
-      </form>
+        <p class="description">
+            Thousands are using this powerful mindset system to improve focus, confidence, positivity and abundance in everyday life.
+        </p>
+
+        <div class="quiz-box">
+
+            <div class="quiz-title">
+                Does This Sound Like You?
+            </div>
+
+            <div class="question">
+                <div class="circle"></div>
+                <span>Do you feel stuck in life?</span>
+            </div>
+
+            <div class="question">
+                <div class="circle"></div>
+                <span>Want a better mindset and clarity?</span>
+            </div>
+
+            <div class="question">
+                <div class="circle"></div>
+                <span>Looking for more positivity and confidence?</span>
+            </div>
+
+        </div>
+
+        <!-- Replace # with your affiliate link -->
+        <a href="#" class="cta-btn">
+            Watch Free Presentation
+        </a>
+
+        <div class="note">
+            Limited access presentation available online.
+        </div>
+
     </div>
-  </div>
+
 </section>
 
-
-  <!-- Footer -->
-  <footer class="bg-blue-600 text-white p-4 text-center">
-    <p>&copy; 2025 GrowthVia Digital. All rights reserved.</p>
-  </footer>
-
-  <script>
-    document.getElementById("contactForm").addEventListener("submit", function (event) {
-      event.preventDefault();
-
-      const formData = new FormData(event.target);
-      const formDetails = {
-        name: formData.get("name"),
-        email: formData.get("email"),
-        message: formData.get("message"),
-      };
-
-      const scriptURL = "https://script.google.com/macros/s/AKfycbxCM7Ggd49OX6Ny0PVTcyY2jHqrNdbAL7PT67o5TJ-kob__tedsBfSAjUZKnYIkQ1M/exec";
-
-      fetch(scriptURL, {
-        method: "POST",
-        mode: "no-cors",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formDetails),
-      })
-        .then(() => {
-          // Show success message
-          document.getElementById("errorMsg").style.display = "block";
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-          alert("⚠️ Something went wrong! Try again.");
-        });
-    });
-  </script>
 </body>
-</html> 
+</html>
